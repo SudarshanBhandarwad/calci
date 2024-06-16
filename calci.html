@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./calsi.css" />
+    <title>document</title>
+  </head>
+  <body>
+    <script>
+            function dis(val){
+          document.getElementById('input').value+=val;
+
+      }
+
+      function trigger(event){
+         // if((event=='1')||(event=='2' )|| (event='3')|| (event=='4')|| (event=='5')|| (event='6')||(event=='7')||(event=='8')|| (event=='9') || (event=='0')|| ( event=='+')|| (event=='-') || (event=='*') || (event=='/'))
+         //  {
+             var x= document.getElementById('input').value;
+
+           x= console.log(event);
+           console.log(x);
+          // }
+
+      }
+      function dlt(){
+         var arr[]= document.getElementById('input').value;
+         let arr2[];
+        arr2=arr.pop();
+        console.log(arr2);
+
+      }
+    </script>
+    <div class="maincontainer">
+      <div class="body">
+        <p id="heading">Calc</p>
+        <div>
+          <input id="input" type="text" value="" />
+        </div>
+        <div class="keypad">
+          <input
+            id="seven"
+            type="button"
+            value="7"
+            onclick="dis('7')"
+            onkeydown="trigger(event)"
+          />
+          <input
+            type="button"
+            value="8"
+            onclick="dis('8')"
+            onkeydown="trigger(event)"
+          />
+          <input
+            type="button"
+            value="9"
+            onclick="dis('9')"
+            onkeydown="trigger(event)"
+          />
+          <input type="button" id="delete" value="DEL" onkeydown="dlt()" />
+          <input
+            type="button"
+            value="4"
+            onclick="dis('4)"
+            onkeydown="trigger(4)"
+          />
+          <input
+            type="button"
+            value="5"
+            onclick="dis('5')"
+            onkeydown="trigger(event)"
+          />
+          <input
+            type="button"
+            value="6"
+            onclick="dis('6')"
+            onkeydown="trigger(event)"
+          />
+          <input
+            type="button"
+            value="+"
+            onclick="dis('+')"
+            onkeydown="trigger(event)"
+          />
+          <input
+            type="button"
+            value="1"
+            onclick="dis('1')"
+            onkeydown="trigger(event)"
+          />
+          <input
+            type="button"
+            value="2"
+            onclick="dis('2')"
+            onkeydown="trigger(event)"
+          />
+          <input
+            type="button"
+            value="3"
+            onclick="dis('3')"
+            onkeydown="trigger(event)"
+          />
+          <input
+            type="button"
+            value="-"
+            onclick="dis('-')"
+            onkeydown="trigger(event)"
+          />
+          <input
+            type="button"
+            value="."
+            onclick="dis('.')"
+            onkeydown="trigger(event)"
+          />
+          <input
+            type="button"
+            value="0"
+            onclick="dis('0')"
+            onkeydown="trigger(event)"
+          />
+          <input
+            type="button"
+            value="/"
+            onclick="dis('/')"
+            onkeydown="trigger(event)"
+          />
+          <input
+            type="button"
+            value="X"
+            onclick="dis('*')"
+            onkeydown="trigger(event)"
+          />
+          <input id="reset" type="button" value="RESET" />
+          <input id="equal" type="button" value="=" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
